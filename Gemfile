@@ -34,6 +34,7 @@ gem 'sprockets', '2.11.0'
 
 gem 'devise'
 
+gem 'simple_form'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
