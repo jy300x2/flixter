@@ -36,6 +36,14 @@ gem 'devise'
 
 gem 'simple_form'
 
+gem 'carrierwave'
+
+gem 'figaro'
+
+gem 'fog'
+
+gem 'mini_magick', '~> 4.3.1'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
