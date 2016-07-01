@@ -19,10 +19,14 @@ class Instructor::LessonsController < ApplicationController
 
   private
 
-  def require_authorized_for_section_lesson
+  def require_authorized_for_current_lesson
     if current_lesson.section.course.user != current_user
       render text: 'Unauthorized', status: :unauthorized
     end
+  end
+
+  def current_lesson
+    @current_lesson ||= Lesson.find(params[:id])
   end
 
   def require_authorized_for_current_section
